@@ -1,0 +1,13 @@
+.auth__container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .img {
+    background: url("../../images/auth/auth.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+

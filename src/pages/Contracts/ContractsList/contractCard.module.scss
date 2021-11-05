@@ -1,0 +1,42 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+
+.contractCard__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 20px;
+  padding: 20px 50px 20px 100px;
+  box-shadow: $shadow-40;
+  margin-top: 10px;
+  background-color: $white;
+  cursor: pointer;
+  font-size: 0.87rem;
+  @include media-breakpoint-down(xxl) {
+    padding: 20px 25px 20px 50px;
+  }
+
+  .title {
+    font-size: 1.12rem;
+  }
+
+  .licensePlate {
+    margin-right: 30px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: $gray-30;
+      right: -16px;
+      top: 0;
+    }
+  }
+}
+
+.contract__active {
+  color: $white;
+  background-color: $red-40;
+}

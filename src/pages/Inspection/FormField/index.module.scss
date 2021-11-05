@@ -1,0 +1,39 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+
+.label {
+  transform: scale(0.75);
+}
+
+.text__field {
+  label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}
+
+.error__wrap {
+  position: relative;
+
+  .error__msg {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    color: $red-40;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    @include media-breakpoint-down(xl) {
+      font-size: 0.65rem;
+    }
+  }
+
+  .error__field {
+    color: $red-40;
+
+    > div:before {
+      border-bottom: 2px solid $red-40;
+    }
+  }
+}

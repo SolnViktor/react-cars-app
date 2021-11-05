@@ -1,0 +1,13 @@
+@import 'src/styles/colors';
+
+.form__container {
+  margin-top: 24px;
+  background-color: $white;
+
+  .tabs__wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 1px solid $gray-30;
+    margin-bottom: 32px;
+  }
+}

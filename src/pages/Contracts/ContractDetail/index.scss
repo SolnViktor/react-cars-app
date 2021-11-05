@@ -1,0 +1,13 @@
+@import 'src/styles/colors';
+
+.contract__detail__container {
+  background-color: $white;
+  min-height: calc(100vh - 64px);
+  .contract__detail__btn {
+    margin: 30px 80px 0 auto;
+
+  }
+  a {
+    text-decoration: none;
+  }
+}

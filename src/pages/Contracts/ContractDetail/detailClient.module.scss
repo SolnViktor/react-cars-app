@@ -1,0 +1,59 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+
+.detail__client {
+  padding: 50px 0;
+  margin: 0 80px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 30px;
+  border-bottom: 1px solid $gray-30;
+  font-size: 0.87rem;
+
+@include media-breakpoint-down(xxl) {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 30px;
+}
+
+  .client__info__container {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-column-gap: 24px;
+  }
+
+  .avatar__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .address {
+    margin-top: 24px;
+  }
+
+  .client__info {
+    display: flex;
+    flex-direction: column;
+
+    > div:nth-child(2) {
+      margin-top: 24px;
+    }
+  }
+
+  .contract__info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+  }
+  .contract__info__item {
+    padding-left: 24px;
+    border-left: 1px solid $gray-30;
+    @include media-breakpoint-down(xxl) {
+      &:not(:nth-child(2n)) {
+        padding-left: 0;
+        border: none;
+      }
+    }
+  }
+}

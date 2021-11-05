@@ -1,0 +1,17 @@
+.information__container {
+  padding: 0 40px 40px;
+  .block__title {
+    font-weight: 600;
+  }
+  .block__wrap {
+    margin: 16px 0 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+    align-items: end;
+  }
+  .btn {
+    margin-left: auto;
+  }
+}

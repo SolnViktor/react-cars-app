@@ -1,0 +1,31 @@
+@import 'src/styles/colors';
+
+.common__btn {
+  width: min-content;
+  white-space: nowrap;
+  padding: 10px 35px;
+  background-color: $red-40;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-radius: 1px;
+  height: min-content;
+  display: block;
+
+  &:hover {
+    background-color: $red-20;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $gray-40;
+  }
+}
+.secondary {
+  border: 1px solid $white;
+  background-color: $black-40;
+  &:hover {
+    background-color: $black-20;
+  }
+}
